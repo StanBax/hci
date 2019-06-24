@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="HCI-demo-group-5">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="logo.png" alt="Logo" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="active">
+                            <a class="js-arrow dashboard-nav" href="#">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="agenda-nav" href="#">
+                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>
+                        <li>
+                            <a class="diary-nav" href="#">
+                                <i class="fas fa-book"></i>Diary</a>
+                        </li>
+                        <li>
+                            <a class="health-nav" href="#">
+                                <i class="fas fa-chart-bar"></i>Health Tracker</a>
+                        </li>
+                        <li>
+                            <a class="chatroom-nav" href="#">
+                                <i class="far fa-comments"></i>Chatroom</a>
+                        </li>
+                        <li>
+                            <a class="information-nav" href="#">
+                                <i class="fas fa-info"></i>Information</a>
+                        </li>
+                        <li>
+                            <a class="settings-nav" href="#">
+                                <i class="fas fa-cog"></i>Settings</a>
+                        </li>
+                        <li>
+                            <a class="contact-nav" href="#">
+                                <i class="far fa-envelope"></i>Contact</a>
+                        </li>
+        
+           
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="logo" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active">
+                            <a class="js-arrow dashboard-nav" href="#">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="agenda-nav" href="#">
+                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                        </li>
+                        <li>
+                            <a class="diary-nav" href="#">
+                                <i class="fas fa-book"></i>Diary</a>
+                        </li>
+                        <li>
+                            <a class="health-nav" href="#">
+                                <i class="fas fa-chart-bar"></i>Health Tracker</a>
+                        </li>
+                        <li>
+                            <a class="chatroom-nav" href="#">
+                                <i class="far fa-comments"></i>Chatroom</a>
+                        </li>
+                        <li>
+                            <a class="information-nav" href="#">
+                                <i class="fas fa-info"></i>Information</a>
+                        </li>
+                        <li>
+                            <a class="settings-nav" href="#">
+                                <i class="fas fa-cog"></i>Settings</a>
+                        </li>
+                        <li>
+                            <a class="contact-nav" href="#">
+                                <i class="far fa-envelope"></i>Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for tips &amp; info..." />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-comment-more"></i>
+                                        <span class="quantity">1</span>
+                                        <div class="mess-dropdown js-dropdown">
+                                            <div class="mess__title">
+                                                <p>You have 2 news message</p>
+                                            </div>
+                                            <div class="mess__item">
+                                                <div class="image img-cir img-40">
+                                                    <img src="images/icon/avatar-06.jpg" alt="Michelle Moreno" />
+                                                </div>
+                                                <div class="content">
+                                                    <h6>Michelle Moreno</h6>
+                                                    <p>Have sent a photo</p>
+                                                    <span class="time">3 min ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="mess__item">
+                                                <div class="image img-cir img-40">
+                                                    <img src="images/icon/avatar-04.jpg" alt="Diane Myers" />
+                                                </div>
+                                                <div class="content">
+                                                    <h6>Diane Myers</h6>
+                                                    <p>You are now connected on message</p>
+                                                    <span class="time">Yesterday</span>
+                                                </div>
+                                            </div>
+                                            <div class="mess__footer">
+                                                <a href="#">View all messages</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-email"></i>
+                                        <span class="quantity">1</span>
+                                        <div class="email-dropdown js-dropdown">
+                                            <div class="email__title">
+                                                <p>You have 3 New Emails</p>
+                                            </div>
+                                            <div class="email__item">
+                                                <div class="image img-cir img-40">
+                                                    <img src="images/icon/avatar-06.jpg" alt="Cynthia Harvey" />
+                                                </div>
+                                                <div class="content">
+                                                    <p>Meeting about new dashboard...</p>
+                                                    <span>Cynthia Harvey, 3 min ago</span>
+                                                </div>
+                                            </div>
+                                            <div class="email__item">
+                                                <div class="image img-cir img-40">
+                                                    <img src="images/icon/avatar-05.jpg" alt="Cynthia Harvey" />
+                                                </div>
+                                                <div class="content">
+                                                    <p>Meeting about new dashboard...</p>
+                                                    <span>Cynthia Harvey, Yesterday</span>
+                                                </div>
+                                            </div>
+                                            <div class="email__item">
+                                                <div class="image img-cir img-40">
+                                                    <img src="images/icon/avatar-04.jpg" alt="Cynthia Harvey" />
+                                                </div>
+                                                <div class="content">
+                                                    <p>Meeting about new dashboard...</p>
+                                                    <span>Cynthia Harvey, April 12,,2018</span>
+                                                </div>
+                                            </div>
+                                            <div class="email__footer">
+                                                <a href="#">See all emails</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-notifications"></i>
+                                        <span class="quantity">3</span>
+                                        <div class="notifi-dropdown js-dropdown">
+                                            <div class="notifi__title">
+                                                <p>You have 3 Notifications</p>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c1 img-cir img-40">
+                                                    <i class="zmdi zmdi-email-open"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>You got a email notification</p>
+                                                    <span class="date">April 12, 2018 06:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c2 img-cir img-40">
+                                                    <i class="zmdi zmdi-account-box"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Your account has been blocked</p>
+                                                    <span class="date">April 12, 2018 06:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__item">
+                                                <div class="bg-c3 img-cir img-40">
+                                                    <i class="zmdi zmdi-file-text"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <p>You got a new file</p>
+                                                    <span class="date">April 12, 2018 06:50</span>
+                                                </div>
+                                            </div>
+                                            <div class="notifi__footer">
+                                                <a href="#">All notifications</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="https://pbs.twimg.com/profile_images/785553150736343040/zRglP8G4_400x400.jpg" alt="Jane Doe" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">Jane Doe</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="https://pbs.twimg.com/profile_images/785553150736343040/zRglP8G4_400x400.jpg" alt="Jane Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">Jane Doe</a>
+                                                    </h5>
+                                                    <span class="email">janedoe@janedoe.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
+                                                </div>
+                                        
+                                                
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+
+
+                <!-- DASHBOARD CONTAINER  -->
+
+
+                    <div class="dashboard-cont container-fluid row"> 
+
+                        <div class="col-sm-7 baby-pic-dashboard"> 
+
+                            <h1 class="stay-quit-header">Stay quit</h1>
+
+                        </div>
+
+                        <div class="col-sm-5 text-center">
+                            
+                            <div class="cont-dashboard-numbers"> 
+
+                                    <h2 class="number-dashboard-h"> 74 </h2>
+                                    <p class="text-nmbr-dashboard"> days clean </p>
+
+                            </div>
+
+                            <div class="cont-dashboard-numbers" style="margin-top: 5%;"> 
+
+                                    <h2 class="number-dashboard-h"> 194 </h2>
+                                    <p class="text-nmbr-dashboard"> days to go </p>
+
+                            </div>
+
+                            <div class="cont-dashboard-numbers" style="margin-top: 5%;"> 
+
+                                    <h2 class="number-dashboard-h"> 1578 </h2>
+                                    <p class="text-nmbr-dashboard"> Q-points </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                <!-- END DASHBOARD CONTAINER --> 
+
+                <!-- BEGIN AGENDA CONTAINER --> 
+
+                <div class="agenda-cont container-fluid row"> 
+
+
+                    <h1>Calendar</h1>
+
+                        <div class="month">      
+                          <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>
+                              August<br>
+                              <span style="font-size:18px">2017</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <ul class="weekdays">
+                          <li>Mo</li>
+                          <li>Tu</li>
+                          <li>We</li>
+                          <li>Th</li>
+                          <li>Fr</li>
+                          <li>Sa</li>
+                          <li>Su</li>
+                        </ul>
+
+                        <ul class="days">  
+                          <li>1</li>
+                          <li>2</li>
+                          <li>3</li>
+                          <li>4</li>
+                          <li>5</li>
+                          <li>6</li>
+                          <li>7</li>
+                          <li>8</li>
+                          <li>9</li>
+                          <li><span class="active">10</span></li>
+                          <li>11</li>
+                          <li>12</li>
+                          <li>13</li>
+                          <li>14</li>
+                          <li>15</li>
+                          <li>16</li>
+                          <li>17</li>
+                          <li>18</li>
+                          <li>19</li>
+                          <li>20</li>
+                          <li>21</li>
+                          <li>22</li>
+                          <li>23</li>
+                          <li>24</li>
+                          <li>25</li>
+                          <li>26</li>
+                          <li>27</li>
+                          <li>28</li>
+                          <li>29</li>
+                          <li>30</li>
+                          <li>31</li>
+                        </ul>
+
+
+
+
+    <div class="appointments-cont">
+        <h3>
+          Today
+        </h3>
+        <td><button type="button"> &#43; Add event </button></td>
+        <table>
+          <tr class="lst-done">
+            <td class = "event-done"> &#10004; Breakfast </td>
+            <td> </td>
+            <td><button type="button"> &#9998; Change </button></td>
+            <td><button type="button" onclick="alert('Are you sure you want to delete this event?')"> &#128465; Delete </button></td>
+          </tr>
+          <tr class="colored-lst">
+            <td> Lunch </td>
+            <td><button type="button"> &#10004; Done </button></td>
+            <td><button type="button"> &#9998; Change </button></td>
+            <td><button type="button" onclick="alert('Are you sure you want to delete this event?')"> &#128465; Delete </button></td>
+          </tr>
+          <tr>
+            <td> Diner </td>
+            <td><button type="button"> &#10004; Done </button></td>
+            <td><button type="button"> &#9998; Change </button></td>
+            <td><button type="button" onclick="alert('Are you sure you want to delete this event?')"> &#128465; Delete </button></td>
+          </tr>
+        </table>
+      </div>
+      </div>
+    </div>
+
+
+
+
+                    <!-- END AGENDA CONTAINER -->
+
+
+                    <!-- DIARY CONTAINER -->
+
+                     
+                     <div class="diary-cont container-fluid row"> 
+
+                       <div id = "section2">
+                          <h1> Diary </h1>
+                          <td><button type="button"> &#43; Add new </button></td>
+                          <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <tr>
+                                                <th>date</th>
+                                                <th>Title</th>
+                                       
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>Worst day ever...</td>
+                                  
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-28 01:22</td>
+                                                <td>Almost smoked...</td>
+                                         
+                                              
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-27 02:12</td>
+                                                <td>Sports helped me today</td>
+                                   
+                                              
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-26 23:06</td>
+                                                <td>I can't wait</td>
+                                               
+                                              
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-25 19:03</td>
+                                                <td>So excited </td>
+                                   
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29 05:57</td>
+                                                <td>The baby kicked today..</td>
+                                              
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-24 19:10</td>
+                                                <td>Couldn't sleep</td>
+                                               
+                                             
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-22 00:43</td>
+                                                <td>I am hungry</td>
+                                                
+                                               
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                       </div>
+
+
+
+                    </div>
+
+
+                    <!-- END DIARY CONTAINER -->
+
+                    <!-- HEALTH TRACKER CONTAINER -->
+
+                     <div class="health-cont container-fluid row"> 
+
+                           <div class="text-center row col-lg-12 col-sm-12">
+                            
+                            <div class="col-sm-4 cont-numbers"> 
+
+                                    <h2 class="number-dashboard-h"> 74 </h2>
+                                    <p class="text-nmbr-dashboard"> days clean </p>
+
+                            </div>
+
+                            <div class="col-sm-4 cont-numbers"> 
+
+                                    <h2 class="number-dashboard-h"> 194 </h2>
+                                    <p class="text-nmbr-dashboard"> days to go </p>
+
+                            </div>
+
+                            <div class="col-sm-4 cont-numbers"> 
+
+                                    <h2 class="number-dashboard-h"> 1578 </h2>
+                                    <p class="text-nmbr-dashboard"> Q-points </p>
+
+                            </div>
+
+                        </div>
+
+
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Progress days</h3>
+                                        <canvas id="lineChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Q-points per day</h3>
+                                        <canvas id="singelBarChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+
+                    <!-- END HEALTH TRACKER CONTAINER -->
+
+                    <!-- CHAT ROOM CONTAINER -->
+
+                        <div class="chat-cont container-fluid row"> 
+
+                                <h1 class="inf-header">Chatroom</h1>
+                                <div class="table-data__tool">
+                                    
+                                    <div class="table-data__tool-right">
+                                        <button class="au-btn au-btn-icon au-btn--small" id="new-chat-btn">
+                                            <i class="zmdi zmdi-plus"></i>Start new chat</button>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table-responsive-data2">
+                                    <table class="table table-data2">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th> By </th>
+                                                <th>active</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="tr-shadow">
+
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">lori@example.com</span>
+                                                </td>
+                                                <td class="desc">Samsung S8 Black</td>
+                                                
+                                               
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Chat">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            
+
+                                            <tr class="tr-shadow">
+
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">lori@example.com</span>
+                                                </td>
+                                                <td class="desc">Samsung S8 Black</td>
+                                                
+                                               
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Chat">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">lori@example.com</span>
+                                                </td>
+                                                <td class="desc">Samsung S8 Black</td>
+                                                
+                                               
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Chat">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="spacer"></tr>
+                                            <tr class="tr-shadow">
+
+                                                <td>Lori Lynch</td>
+                                                <td>
+                                                    <span class="block-email">lori@example.com</span>
+                                                </td>
+                                                <td class="desc">Samsung S8 Black</td>
+                                                
+                                               
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Chat">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </button>
+                                                        
+                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                                            <i class="zmdi zmdi-more"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                         
+
+
+                        </div>
+
+                    <!-- END CHATROOM CONTAINER -->
+
+                    <!-- INFORMATION CONTAINER --> 
+
+                    <div class="information-cont container-fluid row">
+
+                     <h1 class="inf-header">Information and help</h1>
+                     <div class="col-sm-6">
+                        <h2 class="info-subject">Subject</h2>
+                        <p class="preview-txt-info"> Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. </p>
+                     </div>
+                     <div class="col-sm-6">
+                        <h2 class="info-subject">Subject</h2>
+                        <p class="preview-txt-info"> Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. </p>
+                     </div>
+                     <div class="col-sm-6">
+                        <h2 class="info-subject">Subject</h2>
+                        <p class="preview-txt-info"> Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. </p>
+                     </div>
+                     <div class="col-sm-6">
+                        <h2 class="info-subject">Subject</h2>
+                        <p class="preview-txt-info"> Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. </p>
+                     </div>
+
+
+
+                    </div>
+
+                    <!-- END INFORMATION CONTAINER -->
+
+                    <!-- SETTINGS CONTAINER -->
+
+                    <div class="settings-cont container-fluid row">
+
+                        <div id = "section6">
+                              <h2 style="margin-bottom: 3%;"> Settings </h2>
+                              <h4>Notifications</h4>
+                              <table>
+                                <tr>
+                                  <td>Messages</td>
+                                  <td>
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Emails</td>
+                                  <td>
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Newsletter</td>
+                                  <td>
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <hr>
+
+                              <h4>Profile</h4>
+                              <table>
+                                <tr>
+                                  <td>Option 1</td>
+                                  <td>
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Option 2</td>
+                                  <td>
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Option 3</td>
+                                  <td>
+                                    <label class="switch">
+                                      <input type="checkbox" checked>
+                                      <span class="slider round"></span>
+                                    </label>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+
+                    </div>
+
+                    <!-- END SETTINGS SECTION --> 
+                        
+
+                    <!-- CONTACT SECTION --> 
+
+                    
+                     <div class="contact-cont container-fluid row">
+
+         
+
+                    <div class="card">
+                                    <div class="card-header">Send us a message if you need help!</div>
+                                    <div class="card-body card-block">
+                                        <form action="" method="post" class="">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="text" id="username2" name="username2" placeholder="Subject" class="form-control">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input type="textarea" id="email2" name="email2" placeholder="Message" class="form-control">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-actions form-group">
+                                                <button type="submit" class="btn btn-secondary btn-sm">Send</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+
+
+                        </div>
+
+                        <!-- END CONTACT CONTAINER -->
+
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+<script src="navigation.js"></script>
+
+</html>
+<!-- end document-->
